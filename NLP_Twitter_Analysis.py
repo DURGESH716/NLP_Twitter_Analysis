@@ -1,3 +1,5 @@
+# Importing Libraries and Datasets
+
 import pandas as pd
 import numpy as np
 import seaborn as sns
@@ -18,11 +20,13 @@ tweets_df=data
 # Drop the 'id' column
 tweets_df = tweets_df.drop(['id'], axis=1)
 
- sns.heatmap(tweets_df.isnull(), yticklabels = False, cbar = False, cmap="Blues")
+# Exploring Dataset
 
- data.hist(bins = 30, figsize = (13,5), color = 'r')
+sns.heatmap(tweets_df.isnull(), yticklabels = False, cbar = False, cmap="Blues")
 
- sns.countplot(tweets_df['label'], label = "Count")
+data.hist(bins = 30, figsize = (13,5), color = 'r')
+
+sns.countplot(tweets_df['label'], label = "Count")
 
  # Let's get the length of the messages
 tweets_df['length']=tweets_df['tweet'].apply(len)
@@ -45,6 +49,8 @@ negative = tweets_df[tweets_df['label']==1]
 
 negative
 
+# Ploting all the words
+
 sentences=tweets_df['tweet'].tolist()
 
 sentences
@@ -52,6 +58,8 @@ sentences
 len(sentences)
 
 sentences_as_one_string = " ".join(sentences)
+
+# Perform Data Cleaning Part-I (Remove Punctuations)
 
 import string
 string.punctuation
@@ -73,6 +81,8 @@ for char in Test:
 Test_punc_removed_join = ''.join(Test_punc_removed)
 Test_punc_removed_join
 
+# Perform Data Cleaning Part-I (Remove Stop-Words)
+
 import nltk # Natural Language tool kit 
 nltk.download('stopwords')
 
@@ -90,6 +100,8 @@ challege = [ char     for char in mini_challenge  if char not in string.punctuat
 challenge = ''.join(challege)
 challenge = [  word for word in challenge.split() if word.lower() not in stopwords.words('english')  ]
 
+# Perform Count Vectorization / Tokenization
+
 from sklearn.feature_extraction.text import CountVectorizer
 sample_data = ['This is the first paper.','This document is the second paper.','And this is the third one.','Is this the first paper?']
 
@@ -105,6 +117,8 @@ mini_challenge = ['Hello World','Hello Hello World','Hello World world world']
 vectorizer_challenge = CountVectorizer()
 X_challenge = vectorizer_challenge.fit_transform(mini_challenge)
 print(X_challenge.toarray())
+
+# Creating a Pipeline to perform all operations in one command
 
 # Let's define a pipeline to clean up all the messages 
 # The pipeline performs the following: (1) remove punctuation, (2) remove stopwords
@@ -141,6 +155,8 @@ X
 
 y = tweets_df['label']
 
+# Training a Naive Bayes Model
+
 X.shape
 
 y.shape
@@ -152,6 +168,8 @@ from sklearn.naive_bayes import MultinomialNB
 
 NB_classifier = MultinomialNB()
 NB_classifier.fit(X_train, y_train)
+
+# Access the Model Performance using Confusion Matrix
 
 from sklearn.metrics import classification_report, confusion_matrix
 
