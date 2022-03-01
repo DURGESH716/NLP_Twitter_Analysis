@@ -21,7 +21,7 @@ Most of the companies struggles in making analysis of the collected data, may be
 - Performing Tokenization (Vectorization): "Process of converting words into small pieces of useful strings"
 
 ### Step_3: Training and Measuring the Model:-
-- Spliting the dataset into two parts: Training (80% data) and testing (20% data)
+- Splitting the dataset into two parts: Training (80% data) and testing (20% data)
 - Now, train the model using Multinomial Naive Bayes Classifier
 - Achived Accuracy of 0.94 (94%) on testing dataset 
 - Used Confusion Matrix:"Compares true value with predicted value"
