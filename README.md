@@ -23,7 +23,8 @@ Most of the companies struggles in making analysis of the collected data, may be
 ### Step_3: Training and Measuring the Model:-
 - Spliting the dataset into two parts: Training (80% data) and testing (20% data)
 - Now, train the model using Multinomial Naive Bayes Classifier
-- Measuring the accuracy of model using Confusion Matrix:"Compares true value with predicted value"
+- Achived Accuracy of 0.94 (94%) on testing dataset 
+- Used Confusion Matrix:"Compares true value with predicted value"
 
 
 #### **Show 💗 by ⭐ My Repository**
