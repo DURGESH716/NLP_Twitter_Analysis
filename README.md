@@ -1,4 +1,4 @@
-# "Twitter Sentiment Analysis with Natural Language Processing 🤖"
+# "Twitter Sentiment Analysis with Natural Language Processing NLP 🤖"
 <p align="left"> <img src="https://i.ytimg.com/vi/pgZcP852dMg/maxresdefault.jpg" height="350px" /> </p>
 
 ### Problem Statement and Business Case:-
