@@ -5,7 +5,7 @@
 Most of the companies struggles in making analysis of the collected data, may be of customer's feedback form, product reviews, comments or posts on social media or Tweets on Twitter. They requires various teams of expertise to classify good and bad comments, then set plan to accomplish them. To overcome such a problem, new technology has been trending  in the market known as Natural Language Processing.
 - This Model works on Naive Bayes Theoram and conditional Probability to classify tweets as positive 🙂 or negative 😈 
 - The Model converts words into numbers, then these numbers are used to train the NLP Model, and prediction is done
-- The Model works complete independently, without any manual human help, thus saves time and cost
+- The Model works completely independent and does not require any human help or support, also saves cost and time.
 
 ### Pre-Requisites / Technologies Used:-
 - Python Programming Language (Intermediate), Statistics, Probability and Naive Bayes Theoram 
