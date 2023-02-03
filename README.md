@@ -1,6 +1,6 @@
 # "Twitter Sentiment Analysis with Natural Language Processing NLP 🤖"
 <p align="left"> <img src="https://i.ytimg.com/vi/pgZcP852dMg/maxresdefault.jpg" height="350px" /> </p>
-123
+1234
 ### Problem Statement and Business Case:-
 Most of the companies struggles in making analysis of the collected data, may be of customer's feedback form, product reviews, comments or posts on social media or Tweets on Twitter. They requires various teams of expertise to classify good and bad comments, then set plan to accomplish them. To overcome such a problem, new technology has been trending  in the market known as Natural Language Processing.
 - This Model works on Naive Bayes Theoram and conditional Probability to classify tweets as positive 🙂 or negative 😈 
